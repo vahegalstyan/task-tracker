@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "e0cad19a-16bc-4478-bbf3-9deab73c7217",
+		"name": "Task tracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36542913",
+		"_collection_link": "https://interstellar-firefly-384892.postman.co/workspace/Telcell-Market~309c43e1-ed06-47ef-906c-6a543a2a8ab6/collection/36542913-e0cad19a-16bc-4478-bbf3-9deab73c7217?action=share&source=collection_link&creator=36542913"
+	},
+	"item": [
+		{
+			"name": "Get tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://0.0.0.0/api/tasks",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"path": [
+						"api",
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": \"todo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0/api/tasks/88138c1f-140e-3ef8-bb96-ea0f4fbc8925",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"88138c1f-140e-3ef8-bb96-ea0f4fbc8925"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
